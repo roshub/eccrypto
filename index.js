@@ -17,7 +17,7 @@ try {
   if (process.env.ECCRYPTO_NO_FALLBACK) {
     throw e;
   } else {
-    return (module.exports = require("./browser"));
+    module.exports = require("./browser");
   }
 }
 
